@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico" />
+  </head>
+  <body>
+    <section id="calculator">
+      <h1>Simple Interest Calculator</h1>
+
+      <section>
+        <div class="calc">
+          <h2>Find Balance</h2>
+          <form onsubmit="displayInterestAndBalance()">
+            <div>
+              <label for="principle1" name="principle1">Principle $</label>
+              <input name="principle1" id="principle1" type="number" required="required" />
+            </div>
+            <div>
+              <label for="rate1" name="rate1">Rate</label>
+              <span><input name="rate1" id="rate1" type="number" required="required" />%</span>
+
+              <select name="rate1">
+                <option>Yearly</option>
+                <option>Monthly</option>
+              </select>
+            </div>
+            <div>
+              <label for="time1" name="time1">Time</label>
+              <input name="time1" id="time1" type="number" required="required" />
+              <select name="time1">
+                <option>Years</option>
+                <option>Months</option>
+              </select>
+            </div>
+            <input value="Calculate" type="submit" />
+          </form>
+        </div>
+        <div class="result">
+          <h2>Result</h2>
+          <p id="balance">New Balance:&nbsp;</p>
+          <p id="intrest">Interest:&nbsp;</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="calc">
+          <h2>Find Principle</h2>
+          <form>
+            <div>
+              <label for="total2" name="total2">Total $</label>
+              <input name="total2" id="total2" type="number" required="required" />
+            </div>
+            <div>
+              <label for="rate2" name="rate2">Rate</label>
+              <span><input name="rate2" id="rate2" type="number" required="required" />%</span>
+
+              <select name="rate2">
+                <option>Yearly</option>
+                <option>Monthly</option>
+              </select>
+            </div>
+            <div>
+              <label for="time2" name="time2">Time</label>
+              <input name="time2" id="time2" type="number" required="required" />
+              <select name="time2">
+                <option>Years</option>
+                <option>Months</option>
+              </select>
+            </div>
+            <input value="Calculate" type="submit" />
+          </form>
+        </div>
+        <div class="result">
+          <h2>Result</h2>
+          <p id="principle">Principle:&nbsp;</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="calc">
+          <h2>Find Time Needed</h2>
+          <form>
+            <div>
+              <label for="total3" name="total3">Total $</label>
+              <input name="total3" id="total3" type="number" required="required" />
+            </div>
+            <div>
+              <label for="rate3" name="rate3">Rate</label>
+              <span><input name="rate3" id="rate3" type="number" required="required" />%</span>
+
+              <select name="rate3">
+                <option>Yearly</option>
+                <option>Monthly</option>
+              </select>
+            </div>
+            <div>
+              <label for="principle3" name="principle3">Principle $</label>
+              <input name="principle3" id="principle3" type="number" required="required" />
+            </div>
+            <input value="Calculate" type="submit" />
+          </form>
+        </div>
+        <div class="result">
+          <h2>Result</h2>
+          <p id="years">Years:&nbsp;</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="calc">
+          <h2>Find Rate</h2>
+          <form>
+            <div>
+              <label for="total4" name="total4">Total $</label>
+              <input name="total4" id="total4" type="number" required="required" />
+            </div>
+            <div>
+              <label for="time4" name="time4">Time</label>
+              <span><input name="time4" id="time4" type="number" required="required" />%</span>
+
+              <select name="time4">
+                <option>Years</option>
+                <option>Months</option>
+              </select>
+            </div>
+            <div>
+              <label for="principle4" name="principle4">Principle $</label>
+              <input name="principle4" id="principle4" type="number" required="required" />
+            </div>
+            <input value="Calculate" type="submit" />
+          </form>
+        </div>
+        <div class="result">
+          <h2>Result</h2>
+          <p id="rate">Rate:</p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
